@@ -3,25 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Website</title>
+    <title>Kiryozite</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Odin Project</h1>
-    </header>
-    <nav>
+    <!-- Red Circular Hamburger Button -->
+    <button class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+
+    <!-- Expanding Navigation Menu -->
+    <nav class="nav-menu" id="nav-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
     <main>
-      <p>This is a simple webpage using HTML and CSS.</p>
+      <h1 class="site-title">Kiryozite</h1>
+
+      <!-- Home Section: 3 Recent Blog Posts -->
+      <section id="home">
+        <article class="post">
+          <h2><a href="post1.html">Blog Post Title 1</a></h2>
+          <p>Short description of blog post 1.</p>
+        </article>
+        <article class="post">
+          <h2><a href="post2.html">Blog Post Title 2</a></h2>
+          <p>Short description of blog post 2.</p>
+        </article>
+        <article class="post">
+          <h2><a href="post3.html">Blog Post Title 3</a></h2>
+          <p>Short description of blog post 3.</p>
+        </article>
+      </section>
     </main>
-    <footer>
-      <p>&copy; 2025 My Website</p>
-    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
